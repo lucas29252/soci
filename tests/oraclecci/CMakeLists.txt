@@ -11,6 +11,6 @@
 
 soci_backend_test(
   BACKEND OracleCCI
-  DEPENDS OracleCCI Oracle
+  DEPENDS OracleCCI
   SOURCE test-oraclecci.cpp ${SOCI_TESTS_COMMON}
   CONNSTR "service=orcl user=scott password=tiger")

@@ -33,7 +33,7 @@ endif()
 message(STATUS "ORACLE_HOME=${ORACLE_HOME}")
 
 find_path(ORACLECCI_INCLUDE_DIR
-  NAMES occi.h
+  NAMES oci.h occi.h
   PATHS
   ${ORACLE_HOME}/rdbms/public
   ${ORACLE_HOME}/include

@@ -9,7 +9,7 @@
 #
 ###############################################################################
 soci_backend(OracleCCI
-  DEPENDS OracleCCI Oracle
+  DEPENDS OracleCCI
   DESCRIPTION "SOCI backend for Oracle C++ Call Interface (OCCI)"
   AUTHORS "Lucas Ayala"
   MAINTAINERS "Lucas Ayala")
