@@ -34,6 +34,9 @@ jobs:
           - backend: oracle
             name: Oracle 11
             no_boost: true
+          - backend: oraclecci
+            name: Oracle C++ Call Interface
+            no_boost: true
           - backend: valgrind
             # This one dies under Xenial due to a bug in Valgrind and reports
             # errors under Focal in MySQL test, so run it under Bionic where

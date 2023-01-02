@@ -50,6 +50,7 @@ Backend specific client libraries for:
 * MySQL
 * ODBC with specific database driver
 * Oracle
+* Oracle C++ Call Interface (OCCI)
 * PostgreSQL
 * SQLite 3
 

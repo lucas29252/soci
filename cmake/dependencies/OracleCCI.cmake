@@ -1,0 +1,5 @@
+set(ORACLECCI_FIND_QUIETLY TRUE)
+
+find_package(ORACLECCI)
+
+boost_external_report(ORACLECCI INCLUDE_DIR LIBRARIES)

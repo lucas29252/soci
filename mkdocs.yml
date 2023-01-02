@@ -31,6 +31,7 @@ nav:
     - MySQL: backends/mysql.md
     - ODBC: backends/odbc.md
     - Oracle: backends/oracle.md
+    - Oracle C++ Call Interface (OCCI): backends/oraclecci.md
     - PostgreSQL: backends/postgresql.md
     - SQLite3: backends/sqlite3.md
   - Miscellaneous:

@@ -128,6 +128,12 @@ oracle_session_backend::oracle_session_backend(std::string const & serviceName,
     : envhp_(NULL), srvhp_(NULL), errhp_(NULL), svchp_(NULL), usrhp_(NULL),
       decimals_as_strings_(decimals_as_strings)
 {
+    // void constructor for oraclecci
+    if(serviceName.empty() && mode == OCI_AUTH_RESERVED_3)
+    {
+        return;
+    }
+
     // assume service/user/password are utf8-compatible already
     const int defaultSourceCharSetId = 871;
 
