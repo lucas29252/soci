@@ -33,7 +33,7 @@ endif()
 message(STATUS "ORACLE_HOME=${ORACLE_HOME}")
 
 find_path(ORACLECCI_INCLUDE_DIR
-  NAMES oci.h occi.h
+  NAMES occi.h
   PATHS
   ${ORACLE_HOME}/rdbms/public
   ${ORACLE_HOME}/include
@@ -81,7 +81,7 @@ set(ORACLECCI_LIBRARIES ${ORACLECCI_LIBRARY})
 # Handle the QUIETLY and REQUIRED arguments and set ORACLECCI_FOUND to TRUE
 # if all listed variables are TRUE
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(ORACLECCI DEFAULT_MSG ORACLECCI_LIBRARY ORACLECCI_INCLUDE_DIR)
+find_package_handle_standard_args(OracleCCI DEFAULT_MSG ORACLECCI_LIBRARY ORACLECCI_INCLUDE_DIR)
 
 if(NOT ORACLECCI_FOUND)
 	message(STATUS "None of the supported Oracle versions (${ORACLE_VERSIONS}) could be found, consider updating ORACLE_VERSIONS if the version you use is not among them.")

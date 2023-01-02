@@ -1,4 +1,4 @@
-set(ORACLECCI_FIND_QUIETLY TRUE)
+set(OracleCCI_FIND_QUIETLY TRUE)
 
 find_package(OracleCCI)
 
